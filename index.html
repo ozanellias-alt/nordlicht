@@ -3,28 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Seriöser Immobilienmakler – Verkauf & Vermietung | Muster Immobilien</title>
-  <meta name="description" content="Seriöse Immobilienvermittlung: Verkauf, Vermietung, Wertermittlung und Beratung. Transparent, zuverlässig, regional." />
+  <title>Hirschfeld Immobilien – Verkauf & Vermietung | Seriöse Immobilienvermittlung</title>
+  <meta name="description" content="Hirschfeld Immobilien: Verkauf, Vermietung und Wertermittlung. Seriös, diskret, regional – mit klarer Strategie und hochwertiger Präsentation." />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Muster Immobilien – Seriöse Immobilienvermittlung" />
-  <meta property="og:description" content="Verkauf, Vermietung, Wertermittlung – professionell & diskret." />
-  <meta property="og:type" content="website" />
+  <!-- Fonts: sehr seriös -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      /* Seriöse Premium-Palette (heller Hintergrund) */
-      --bg: #f6f7fb;
+      /* Farbwelt: Moosgrün + Altweiß + Gold */
+      --bg: #f5f1e6;        /* Altweiß */
       --card:#ffffff;
-      --ink:#0f172a;
-      --muted:#475569;
-      --line:#e2e8f0;
+      --ink:#1b1b1b;
+      --muted:#4b5563;
+      --line:#e6dcc8;
 
-      --brand:#0b1f3a;   /* Navy */
-      --accent:#0ea5a4;  /* Teal */
-      --accent2:#7c3aed; /* optional, sehr dezent genutzt */
+      --brand:#2f4a3a;      /* Moosgrün */
+      --accent:#b08d2f;     /* Gold */
+      --accentSoft: rgba(176,141,47,.14);
 
-      --shadow: 0 18px 55px rgba(15,23,42,.10);
+      --shadow: 0 18px 55px rgba(27,27,27,.10);
       --radius: 18px;
       --max: 1160px;
     }
@@ -33,11 +33,11 @@
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
       color:var(--ink);
       background:
-        radial-gradient(900px 650px at 15% -10%, rgba(14,165,164,.14), transparent 60%),
-        radial-gradient(900px 650px at 95% 10%, rgba(11,31,58,.10), transparent 55%),
+        radial-gradient(900px 650px at 15% -10%, rgba(47,74,58,.12), transparent 60%),
+        radial-gradient(900px 650px at 95% 10%, rgba(176,141,47,.12), transparent 55%),
         var(--bg);
       line-height:1.6;
     }
@@ -49,21 +49,23 @@
       border-radius:999px;
       border:1px solid var(--line);
       background: rgba(255,255,255,.7);
-      color: var(--muted);
+      color: #5b5b5b;
       font-weight:800;
       font-size:12px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
     }
     .dot{
       width:10px;height:10px;border-radius:50%;
       background: linear-gradient(135deg, var(--accent), var(--brand));
-      box-shadow: 0 0 0 6px rgba(14,165,164,.12);
+      box-shadow: 0 0 0 6px var(--accentSoft);
     }
 
     /* Header */
     header{
       position:sticky; top:0; z-index:50;
       backdrop-filter: blur(10px) saturate(180%);
-      background: rgba(246,247,251,.75);
+      background: rgba(245,241,230,.78);
       border-bottom:1px solid var(--line);
     }
     .nav{
@@ -72,26 +74,47 @@
     }
     .brand{
       display:flex; align-items:center; gap:12px;
-      text-decoration:none; font-weight:900; letter-spacing:.2px;
-      min-width: 220px;
+      text-decoration:none;
+      min-width: 260px;
     }
-    .logo{
-      width:34px;height:34px;border-radius:12px;
+    .mark{
+      width:38px;height:38px;border-radius:14px;
       display:grid;place-items:center;
-      color:white;
-      background: linear-gradient(135deg, var(--brand), var(--accent));
-      box-shadow: 0 12px 30px rgba(11,31,58,.18);
+      color: var(--bg);
+      background: linear-gradient(135deg, var(--brand), #203427);
+      box-shadow: 0 12px 30px rgba(47,74,58,.18);
+      border: 1px solid rgba(176,141,47,.35);
       font-weight:1000;
+      font-family: "Playfair Display", serif;
+      letter-spacing:.02em;
     }
+    .brandName{
+      display:flex; flex-direction:column; line-height:1.05;
+    }
+    .brandName b{
+      font-family: "Playfair Display", serif;
+      font-weight: 800;
+      letter-spacing:.01em;
+      font-size: 16px;
+    }
+    .brandName span{
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+
     nav ul{list-style:none; margin:0; padding:0; display:flex; gap:6px; align-items:center;}
     nav a{
       text-decoration:none;
       padding:10px 12px;
       border-radius:14px;
-      color:var(--muted);
+      color: #5a5a5a;
       font-weight:800;
     }
-    nav a:hover{background: rgba(14,165,164,.10); color:var(--ink);}
+    nav a:hover{background: rgba(47,74,58,.10); color:var(--ink);}
+
     .actions{display:flex; gap:10px; align-items:center;}
     .btn{
       display:inline-flex; align-items:center; justify-content:center; gap:10px;
@@ -99,7 +122,7 @@
       border-radius:14px;
       border:1px solid var(--line);
       background: var(--card);
-      box-shadow: 0 8px 28px rgba(15,23,42,.07);
+      box-shadow: 0 8px 28px rgba(27,27,27,.07);
       font-weight:900;
       text-decoration:none;
       white-space:nowrap;
@@ -107,8 +130,21 @@
     .btn:hover{transform:translateY(-1px)}
     .btn.primary{
       border-color: transparent;
-      background: linear-gradient(135deg, var(--brand), var(--accent));
-      color:white;
+      background: linear-gradient(135deg, var(--brand), #203427);
+      color: var(--bg);
+      position:relative;
+    }
+    .btn.primary:after{
+      content:"";
+      position:absolute; inset:-1px;
+      border-radius:14px;
+      border:1px solid rgba(176,141,47,.55);
+      pointer-events:none;
+    }
+    .btn.gold{
+      background: linear-gradient(135deg, #c59b36, var(--accent));
+      color: #1b1b1b;
+      border-color: transparent;
     }
     .menuBtn{display:none}
 
@@ -129,16 +165,17 @@
     }
     h1{
       margin:12px 0 10px;
+      font-family: "Playfair Display", serif;
       font-size: clamp(34px, 4.2vw, 54px);
       line-height:1.05;
-      letter-spacing:-.02em;
+      letter-spacing:-.01em;
     }
     .lead{
       margin:0;
       color:var(--muted);
       font-size:16px;
       max-width:70ch;
-      font-weight:650;
+      font-weight:600;
     }
     .heroCtas{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;}
     .trust{
@@ -151,13 +188,13 @@
       border:1px solid var(--line);
       border-radius: 16px;
       padding:14px;
-      background: rgba(246,247,251,.55);
+      background: rgba(245,241,230,.55);
     }
     .trustBox b{display:block; font-size:14px}
     .trustBox span{color:var(--muted); font-weight:700; font-size:13px}
 
     .heroMedia{
-      min-height: 420px;
+      min-height: 430px;
       border-radius: var(--radius);
       border:1px solid var(--line);
       box-shadow: var(--shadow);
@@ -165,7 +202,7 @@
       display:flex;
       flex-direction:column;
       background:
-        linear-gradient(180deg, rgba(255,255,255,.65), rgba(255,255,255,.90)),
+        linear-gradient(180deg, rgba(245,241,230,.65), rgba(245,241,230,.92)),
         url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=75");
       background-size:cover;
       background-position:center;
@@ -178,11 +215,15 @@
       height:100%;
       justify-content:space-between;
     }
-    .heroMedia h3{margin:0; font-size:18px}
-    .heroMedia p{margin:0; color:var(--muted); font-weight:750}
+    .heroMedia h3{
+      margin:0;
+      font-family:"Playfair Display", serif;
+      font-size:18px
+    }
+    .heroMedia p{margin:0; color:var(--muted); font-weight:700}
     .miniGrid{display:grid; gap:10px}
     .miniCard{
-      background: rgba(255,255,255,.78);
+      background: rgba(255,255,255,.82);
       border:1px solid var(--line);
       border-radius: 16px;
       padding:14px;
@@ -198,30 +239,40 @@
     }
     .sectionHead h2{
       margin:0;
+      font-family:"Playfair Display", serif;
       font-size: clamp(22px, 2.6vw, 32px);
       letter-spacing:-.01em;
     }
-    .sectionHead p{margin:0; color:var(--muted); font-weight:650; max-width:72ch}
+    .sectionHead p{margin:0; color:var(--muted); font-weight:600; max-width:72ch}
     .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px;}
     .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:14px;}
+
     .feature{
       border:1px solid var(--line);
       background: var(--card);
       border-radius: var(--radius);
       padding:18px;
-      box-shadow: 0 10px 30px rgba(15,23,42,.06);
+      box-shadow: 0 10px 30px rgba(27,27,27,.06);
     }
     .icon{
       width:44px;height:44px;border-radius:16px;
       display:grid;place-items:center;
-      background: rgba(14,165,164,.12);
-      border:1px solid rgba(14,165,164,.22);
+      background: rgba(47,74,58,.10);
+      border:1px solid rgba(47,74,58,.18);
       font-weight:1000;
       color: var(--brand);
       margin-bottom:10px;
+      position:relative;
+    }
+    .icon:after{
+      content:"";
+      position:absolute; inset:-1px;
+      border-radius:16px;
+      border:1px solid rgba(176,141,47,.35);
+      pointer-events:none;
     }
     .feature h3{margin:0 0 6px; font-size:16px}
-    .feature p{margin:0; color:var(--muted); font-weight:650}
+    .feature p{margin:0; color:var(--muted); font-weight:600}
 
     .service{
       display:flex; flex-direction:column; gap:10px;
@@ -229,12 +280,15 @@
       background: var(--card);
       border-radius: var(--radius);
       overflow:hidden;
-      box-shadow: 0 10px 30px rgba(15,23,42,.06);
+      box-shadow: 0 10px 30px rgba(27,27,27,.06);
     }
     .service img{width:100%; height:180px; object-fit:cover;}
     .service .pad{padding:16px}
-    .service h3{margin:0 0 6px}
-    .service p{margin:0; color:var(--muted); font-weight:650}
+    .service h3{
+      margin:0 0 6px;
+      font-family:"Playfair Display", serif;
+    }
+    .service p{margin:0; color:var(--muted); font-weight:600}
 
     .quote{
       border:1px solid var(--line);
@@ -242,7 +296,7 @@
       border-radius: var(--radius);
       padding:18px;
     }
-    .stars{letter-spacing:.08em}
+    .stars{letter-spacing:.08em; color: var(--accent)}
     .quote p{margin:8px 0 0; color:var(--muted); font-weight:700}
     .who{margin-top:12px; color:var(--muted); font-weight:800}
     .who b{color:var(--ink)}
@@ -253,12 +307,12 @@
       border-radius: var(--radius);
       padding:14px 16px;
     }
-    summary{cursor:pointer; font-weight:950}
-    details p{margin:10px 0 0; color:var(--muted); font-weight:650}
+    summary{cursor:pointer; font-weight:900}
+    details p{margin:10px 0 0; color:var(--muted); font-weight:600}
 
     /* Contact */
     .contactCard{padding:18px}
-    .form label{display:block; font-weight:950; margin:10px 0 6px}
+    .form label{display:block; font-weight:900; margin:10px 0 6px}
     .form input,.form textarea,.form select{
       width:100%;
       padding:12px 12px;
@@ -267,6 +321,7 @@
       background: white;
       color: var(--ink);
       outline:none;
+      font-family: Inter, system-ui, Arial;
     }
     .form textarea{min-height:120px; resize:vertical}
     .row2{display:grid; grid-template-columns: 1fr 1fr; gap:10px}
@@ -275,7 +330,7 @@
     /* CTA band */
     .ctaBand{
       border:1px solid var(--line);
-      background: linear-gradient(135deg, rgba(11,31,58,.06), rgba(14,165,164,.10));
+      background: linear-gradient(135deg, rgba(47,74,58,.08), rgba(176,141,47,.10));
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding:22px;
@@ -301,7 +356,7 @@
       display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
     }
 
-    /* Floating WhatsApp (optional) */
+    /* Floating buttons */
     .float{
       position:fixed;
       right:18px;
@@ -327,7 +382,7 @@
         left:0; right:0;
         top:64px;
         padding:12px;
-        background: rgba(246,247,251,.95);
+        background: rgba(245,241,230,.95);
         border:1px solid var(--line);
         border-radius: 18px;
         gap:6px;
@@ -335,15 +390,15 @@
     }
   </style>
 
-  <!-- LocalBusiness Schema (Platzhalter) -->
+  <!-- Schema.org (bitte später mit echten Daten füllen) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"RealEstateAgent",
-    "name":"Muster Immobilien",
+    "name":"Hirschfeld Immobilien",
     "areaServed":"Ihre Region",
     "telephone":"+49 000 0000000",
-    "email":"info@beispiel.de",
+    "email":"info@hirschfeld-immobilien.de",
     "address":{
       "@type":"PostalAddress",
       "streetAddress":"Musterstraße 1",
@@ -361,15 +416,18 @@
   <div class="wrap">
     <div class="nav" id="topNav">
       <a class="brand" href="#top" aria-label="Start">
-        <span class="logo">MI</span>
-        <span>Muster Immobilien</span>
+        <span class="mark">H</span>
+        <span class="brandName">
+          <b>Hirschfeld Immobilien</b>
+          <span>Verkauf · Vermietung · Wertermittlung</span>
+        </span>
       </a>
 
       <nav aria-label="Navigation">
         <ul id="mobileMenu">
           <li><a href="#leistungen">Leistungen</a></li>
           <li><a href="#ablauf">Ablauf</a></li>
-          <li><a href="#referenzen">Referenzen</a></li>
+          <li><a href="#referenzen">Stimmen</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
@@ -393,13 +451,13 @@
           <div class="pill"><span class="dot"></span> SERIÖS · DISKRET · REGIONAL</div>
           <h1>Immobilien verkaufen oder vermieten –<br/>professionell &amp; transparent.</h1>
           <p class="lead">
-            Wir begleiten Eigentümer von der Wertermittlung über die Vermarktung bis zum Abschluss –
-            mit klarer Kommunikation, hochwertiger Präsentation und sauberer Abwicklung.
+            Hirschfeld Immobilien begleitet Eigentümer von der Wertermittlung über die Vermarktung bis zum Abschluss –
+            mit klarer Kommunikation, hochwertiger Präsentation und strukturierter Abwicklung.
           </p>
 
           <div class="heroCtas">
             <a class="btn primary" href="#kontakt">Kostenlose Erstberatung</a>
-            <a class="btn" href="#leistungen">Leistungen ansehen</a>
+            <a class="btn gold" href="#leistungen">Leistungen ansehen</a>
           </div>
 
           <div class="trust">
@@ -413,19 +471,19 @@
           <div class="heroMediaInner">
             <div>
               <div class="pill">Ihre Region · Verkauf & Vermietung</div>
-              <h3 style="margin-top:10px;">Starkes Netzwerk. Klare Prozesse.</h3>
+              <h3 style="margin-top:10px;">Wert erhalten. Wert steigern. Sicher abschließen.</h3>
               <p>Damit Ihre Immobilie rechtssicher, stressfrei und optimal platziert wird.</p>
             </div>
 
             <div class="miniGrid">
-              <div class="miniCard"><b>Antwort in 24h</b><span>auf Ihre Anfrage (werktags)</span></div>
+              <div class="miniCard"><b>Antwort in 24h</b><span>werktags auf Ihre Anfrage</span></div>
               <div class="miniCard"><b>Diskrete Vermarktung</b><span>auf Wunsch Off-Market</span></div>
               <div class="miniCard"><b>Transparente Schritte</b><span>Sie wissen immer, wo wir stehen</span></div>
             </div>
 
             <div style="display:flex; gap:10px; flex-wrap:wrap;">
               <a class="btn primary" href="#kontakt">Termin sichern</a>
-              <a class="btn" href="mailto:info@beispiel.de">E-Mail</a>
+              <a class="btn" href="mailto:info@hirschfeld-immobilien.de">E-Mail</a>
             </div>
           </div>
         </div>
@@ -441,7 +499,7 @@
           <h2>Leistungen</h2>
           <p>Alles, was Sie für einen erfolgreichen Verkauf oder eine sichere Vermietung benötigen – aus einer Hand.</p>
         </div>
-        <a class="btn" href="#kontakt">Angebot anfragen</a>
+        <a class="btn gold" href="#kontakt">Angebot anfragen</a>
       </div>
 
       <div class="grid3">
@@ -501,59 +559,35 @@
       </div>
 
       <div class="grid3">
-        <div class="feature">
-          <div class="icon">1</div>
-          <h3>Erstgespräch</h3>
-          <p>Ziele klären, Objekt verstehen, nächsten Schritte festlegen (unverbindlich).</p>
-        </div>
-        <div class="feature">
-          <div class="icon">2</div>
-          <h3>Bewertung & Strategie</h3>
-          <p>Marktanalyse, Preisrahmen, Vermarktungsweg (öffentlich oder diskret).</p>
-        </div>
-        <div class="feature">
-          <div class="icon">3</div>
-          <h3>Vermarktung</h3>
-          <p>Exposé, Inserate, Interessentenmanagement, Besichtigungen.</p>
-        </div>
-        <div class="feature">
-          <div class="icon">4</div>
-          <h3>Prüfung</h3>
-          <p>Bonität, Finanzierungscheck, Dokumente – nur qualifizierte Kandidaten.</p>
-        </div>
-        <div class="feature">
-          <div class="icon">5</div>
-          <h3>Abschluss</h3>
-          <p>Verhandlung, Notartermin / Vertrag, Übergabeprotokoll.</p>
-        </div>
-        <div class="feature">
-          <div class="icon">✓</div>
-          <h3>Nachbetreuung</h3>
-          <p>Sauberer Abschluss, offene Punkte klären, Empfehlungen & Netzwerk.</p>
-        </div>
+        <div class="feature"><div class="icon">1</div><h3>Erstgespräch</h3><p>Ziele klären, Objekt verstehen, nächste Schritte festlegen (unverbindlich).</p></div>
+        <div class="feature"><div class="icon">2</div><h3>Bewertung & Strategie</h3><p>Marktanalyse, Preisrahmen, Vermarktungsweg (öffentlich oder diskret).</p></div>
+        <div class="feature"><div class="icon">3</div><h3>Vermarktung</h3><p>Exposé, Inserate, Interessentenmanagement, Besichtigungen.</p></div>
+        <div class="feature"><div class="icon">4</div><h3>Prüfung</h3><p>Bonität, Finanzierungscheck, Dokumente – nur qualifizierte Kandidaten.</p></div>
+        <div class="feature"><div class="icon">5</div><h3>Abschluss</h3><p>Verhandlung, Notartermin / Vertrag, Übergabeprotokoll.</p></div>
+        <div class="feature"><div class="icon">✓</div><h3>Nachbetreuung</h3><p>Sauberer Abschluss, offene Punkte klären, Empfehlungen & Netzwerk.</p></div>
       </div>
 
       <div style="margin-top:16px" class="ctaBand">
         <div>
           <div class="pill"><span class="dot"></span> Kostenfreie Ersteinschätzung</div>
-          <h3 style="margin:10px 0 0;">In 15 Minuten Klarheit: Verkauf oder Vermietung?</h3>
-          <div class="small">Telefon: +49 000 0000000 · E-Mail: info@beispiel.de</div>
+          <h3 style="margin:10px 0 0; font-family:'Playfair Display',serif;">In 15 Minuten Klarheit: Verkauf oder Vermietung?</h3>
+          <div class="small">Telefon: +49 000 0000000 · E-Mail: info@hirschfeld-immobilien.de</div>
         </div>
         <div style="display:flex; gap:10px; flex-wrap:wrap;">
           <a class="btn primary" href="#kontakt">Jetzt anfragen</a>
-          <a class="btn" href="tel:+490000000000">Anrufen</a>
+          <a class="btn gold" href="tel:+490000000000">Anrufen</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Referenzen / Testimonials -->
+  <!-- Stimmen -->
   <section id="referenzen">
     <div class="wrap">
       <div class="sectionHead">
         <div>
-          <h2>Stimmen & Ergebnisse</h2>
-          <p>Ein paar typische Rückmeldungen (Beispiele) – ersetze sie später mit echten Bewertungen.</p>
+          <h2>Stimmen</h2>
+          <p>Platzhalter – hier später echte Bewertungen eintragen (Google/ImmoScout etc.).</p>
         </div>
       </div>
 
@@ -620,7 +654,7 @@
 
       <div class="grid2">
         <div class="card contactCard">
-          <h3 style="margin:0 0 8px;">Anfrage senden</h3>
+          <h3 style="margin:0 0 8px; font-family:'Playfair Display',serif;">Anfrage senden</h3>
           <div class="small">Ohne Server: Das Formular öffnet eine E-Mail (mailto).</div>
 
           <form class="form" id="contactForm" style="margin-top:10px;">
@@ -648,7 +682,7 @@
             </select>
 
             <label for="message">Nachricht *</label>
-            <textarea id="message" required placeholder="Kurz: Objektart, Ort, grobe Eckdaten, Wunschzeitfenster für Rückruf."></textarea>
+            <textarea id="message" required placeholder="Objektart, Ort, grobe Eckdaten, Wunschzeitfenster für Rückruf."></textarea>
 
             <div class="small" style="margin-top:10px;">
               Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß Datenschutzerklärung zu.
@@ -659,7 +693,7 @@
         </div>
 
         <div class="card contactCard">
-          <h3 style="margin:0 0 8px;">Direktkontakt</h3>
+          <h3 style="margin:0 0 8px; font-family:'Playfair Display',serif;">Direktkontakt</h3>
 
           <div class="feature" style="margin-top:10px;">
             <div class="icon">📞</div>
@@ -670,7 +704,7 @@
           <div class="feature" style="margin-top:12px;">
             <div class="icon">✉</div>
             <h3>E-Mail</h3>
-            <p><a href="mailto:info@beispiel.de">info@beispiel.de</a></p>
+            <p><a href="mailto:info@hirschfeld-immobilien.de">info@hirschfeld-immobilien.de</a></p>
           </div>
 
           <div class="feature" style="margin-top:12px;">
@@ -680,8 +714,8 @@
           </div>
 
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
-            <a class="btn primary" href="tel:+490000000000">Jetzt anrufen</a>
-            <a class="btn" href="mailto:info@beispiel.de">E-Mail</a>
+            <a class="btn gold" href="tel:+490000000000">Jetzt anrufen</a>
+            <a class="btn" href="mailto:info@hirschfeld-immobilien.de">E-Mail</a>
           </div>
         </div>
       </div>
@@ -694,8 +728,11 @@
     <div class="footGrid">
       <div>
         <div class="brand" style="min-width:auto">
-          <span class="logo">MI</span>
-          <span>Muster Immobilien</span>
+          <span class="mark">H</span>
+          <span class="brandName">
+            <b>Hirschfeld Immobilien</b>
+            <span>seriös & diskret</span>
+          </span>
         </div>
         <p style="margin:10px 0 0;">
           Seriöse Immobilienvermittlung – Verkauf, Vermietung und Wertermittlung in Ihrer Region.
@@ -707,7 +744,7 @@
         <div style="margin-top:8px; display:grid; gap:6px;">
           <a href="#leistungen">Leistungen</a>
           <a href="#ablauf">Ablauf</a>
-          <a href="#referenzen">Referenzen</a>
+          <a href="#referenzen">Stimmen</a>
           <a href="#faq">FAQ</a>
           <a href="#kontakt">Kontakt</a>
         </div>
@@ -723,17 +760,14 @@
     </div>
 
     <div class="copy">
-      <div>© <span id="year"></span> Muster Immobilien. Alle Rechte vorbehalten.</div>
-      <div>Design: seriös & minimal</div>
+      <div>© <span id="year"></span> Hirschfeld Immobilien. Alle Rechte vorbehalten.</div>
+      <div>Moosgrün · Altweiß · Gold</div>
     </div>
   </div>
 </footer>
 
-<!-- Floating buttons (optional) -->
 <div class="float">
   <a class="btn primary" href="#kontakt">✍️ Anfrage</a>
-  <!-- WhatsApp optional: Nummer im internationalem Format ohne + einsetzen -->
-  <!-- <a class="btn" href="https://wa.me/490000000000" target="_blank" rel="noreferrer">💬 WhatsApp</a> -->
 </div>
 
 <script>
@@ -745,7 +779,7 @@
     btn.setAttribute("aria-expanded", open ? "true" : "false");
   });
 
-  // Mailto form submit (GitHub Pages ohne Backend)
+  // Mailto form submit
   document.getElementById("contactForm")?.addEventListener("submit", (e) => {
     e.preventDefault();
     const v = (id) => document.getElementById(id)?.value?.trim() || "";
@@ -760,7 +794,7 @@
       `Name: ${name}\nE-Mail: ${email}\nTelefon: ${phone}\nThema: ${topic}\n\nNachricht:\n${message}`
     );
 
-    window.location.href = `mailto:info@beispiel.de?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@hirschfeld-immobilien.de?subject=${subject}&body=${body}`;
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
